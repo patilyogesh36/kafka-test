@@ -20,7 +20,7 @@ public class ConsumerDemo {
     }
 
     /**
-     * This is kafka consumer
+     * This is kafka consumer which consumes messages from first_topic
      */
     private void consumer() {
         Properties properties = new Properties();

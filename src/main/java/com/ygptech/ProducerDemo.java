@@ -20,7 +20,7 @@ public class ProducerDemo {
     }
 
     /**
-     * This is producer
+     * This is the kafka-producer which produces messages to first_topic
      */
     public void producer() {
         //properties
