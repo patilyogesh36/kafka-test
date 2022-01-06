@@ -19,6 +19,9 @@ public class ConsumerDemo {
         consumerDemo.consumer();
     }
 
+    /**
+     * This is kafka consumer
+     */
     private void consumer() {
         Properties properties = new Properties();
         properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class.getName());

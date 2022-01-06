@@ -16,10 +16,13 @@ public class ProducerDemo {
 
     public static void main(String[] args) {
         ProducerDemo producerDemo = new ProducerDemo();
-        producerDemo.produce();
+        producerDemo.producer();
     }
 
-    public void produce() {
+    /**
+     * This is producer
+     */
+    public void producer() {
         //properties
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
