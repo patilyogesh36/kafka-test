@@ -35,6 +35,7 @@ public class ConsumerDemo {
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
             for (ConsumerRecord record : records) {
+                // Just for debugging
                 System.out.println("Added debugging to consumer : " + record);
                 logger.info("Key : "+record.key()+",  value : "+record.value()+",  offset : "+record.offset()+",  partition : "+record.partition());
             }
