@@ -35,6 +35,7 @@ public class ProducerDemo {
         //send data
         for (int i=1; i<=10; i++) {
             ProducerRecord<String, String> record = new ProducerRecord<>("first_topic", "id_"+i,i+" message from intellij IDEA");
+            System.out.println("Added debugging to Producer");
             producer.send(record, (metadata, e) -> {
                 if (e == null) {
                     logger.info("Received new metadata." +
